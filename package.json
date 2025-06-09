@@ -13,12 +13,23 @@
     "db:migrate": "tsx ./lib/db/migrate.ts"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.21.0",
+    "@heroui/button": "^2.2.21",
+    "@heroui/card": "^2.2.20",
+    "@heroui/divider": "^2.2.15",
+    "@heroui/input": "^2.4.21",
+    "@heroui/system": "^2.4.17",
+    "@heroui/theme": "^2.4.17",
+    "@hookform/resolvers": "^5.1.1",
     "@neondatabase/serverless": "^1.0.1",
     "dotenv": "^16.5.0",
     "drizzle-orm": "^0.44.2",
+    "framer-motion": "^12.16.0",
+    "lucide-react": "^0.513.0",
     "next": "15.3.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.57.0",
     "zod": "^3.25.56"
   },
   "devDependencies": {
