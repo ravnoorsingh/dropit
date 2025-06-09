@@ -12,7 +12,7 @@ import { Input } from "@heroui/input";
 import { Card, CardBody, CardHeader, CardFooter } from "@heroui/card";
 import { Divider } from "@heroui/divider";
 import { Mail, Lock, AlertCircle, Eye, EyeOff } from "lucide-react";
-import { signInSchema } from "@/schemas/signInschema";
+import { signInSchema } from "@/schemas/signInSchema";
 
 export default function SignInForm() {
   const router = useRouter();
