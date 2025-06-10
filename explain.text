@@ -1,0 +1,2 @@
+entty point -> Auth with clerk -> take input from user(folder name) -> Take userId  and match -> 
+validation for folderName -> parentId ? (verification of the parentId, match the parentId, parentId should belong to the user, It should be a folder) -> Create the folderData -> insert into DB : if parentId is null then no further parent exist
