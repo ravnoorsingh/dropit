@@ -1,2 +1,6 @@
 entty point -> Auth with clerk -> take input from user(folder name) -> Take userId  and match -> 
 validation for folderName -> parentId ? (verification of the parentId, match the parentId, parentId should belong to the user, It should be a folder) -> Create the folderData -> insert into DB : if parentId is null then no further parent exist
+
+
+Take form data and upload image to imagekit -> POST route -> Authenticate User -> parse FormData(extract files, parentId, UserId etc.) -> match it with userId -> if file exist(validation) -> 
+parentId ? (If parentId exist) Ensure that ParentId exts, make sure parentId belongs to the user, it should be a folder, check if the file is of type image or pdf -> convert file to buffer -> generate filename -> upload the file to imagekit : 
