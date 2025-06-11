@@ -8,7 +8,6 @@
 import { integer, pgTable, text, uuid, boolean, timestamp} from "drizzle-orm/pg-core";
 import { relations} from "drizzle-orm";
 
-
 /**
  * Files Table
  *

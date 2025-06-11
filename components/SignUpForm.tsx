@@ -22,6 +22,17 @@ import {
   Eye,
   EyeOff,
 } from "lucide-react";
+/*
+"use client": Marks this as a client component in Next.js (needed for hooks and interactivity).
+useForm: From React Hook Form, manages form state and validation.
+useSignUp: From Clerk, provides methods and state for sign-up flows.
+zod: For schema-based validation.
+useRouter: Next.js hook for navigation.
+signUpSchema: Custom Zod schema for validating sign-up data.
+useState: React state management.
+zodResolver: Integrates Zod validation with React Hook Form.
+UI Components: From HeroUI and Lucide for form controls and icons.
+*/
 
 export default function SignUpForm(){
 
@@ -35,6 +46,15 @@ export default function SignUpForm(){
 
     const [showPassword, setShowPassword] = useState(false);
     const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+    /*
+    verifying: Whether the user is in the email verification step.
+    isSubmitting: Whether a form submission is    in progress.
+    authError: Error message for sign-up    failures.
+    verificationCode: Stores the OTP code     entered by the user.
+    verificationError: Error message for    verification failures.
+    showPassword, showConfirmPassword: Toggles    for password visibility.
+    signUp, isLoaded, setActive: Clerk sign-up    state and methods.
+    */
 
     
     const {signUp, isLoaded , setActive} = useSignUp()
